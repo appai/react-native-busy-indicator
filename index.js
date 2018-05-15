@@ -110,18 +110,20 @@ class BusyIndicator extends React.Component {
   }
 }
 
-BusyIndicator.propTypes = {
-  color: PropTypes.string,
-  overlayColor: PropTypes.string,
-  overlayHeight: PropTypes.number,
-  overlayWidth: PropTypes.number,
-  size: PropTypes.oneOf(['small', 'large']),
-  startVisible: PropTypes.bool,
-  text: PropTypes.string,
-  textColor: PropTypes.string,
-  textFontSize: PropTypes.number,
-  textNumberOfLines: PropTypes.number
-};
+// Deprecated as of React v15.5
+// https://stackoverflow.com/questions/44573199/cannot-read-property-string-of-undefined-react-proptypes-layoutproptypes-j
+// BusyIndicator.propTypes = {
+//   color: PropTypes.string,
+//   overlayColor: PropTypes.string,
+//   overlayHeight: PropTypes.number,
+//   overlayWidth: PropTypes.number,
+//   size: PropTypes.oneOf(['small', 'large']),
+//   startVisible: PropTypes.bool,
+//   text: PropTypes.string,
+//   textColor: PropTypes.string,
+//   textFontSize: PropTypes.number,
+//   textNumberOfLines: PropTypes.number
+// };
 
 BusyIndicator.defaultProps = {
   isDismissible: false,
